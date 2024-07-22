@@ -1,0 +1,34 @@
+used to be useful
+        
+        # if self.facing == 'down':
+        #     if self.y_change == 0:
+        #         self.image = down_animations[0]
+        #     else:
+        #         self.image = down_animations[math.floor(self.animation_loop)]
+        #         self.animation_loop += 0.1
+        #         if self.animation_loop >= 3:
+        #             self.animation_loop = 1
+        # if self.facing == 'up':
+        #     if self.y_change == 0:
+        #         self.image = up_animations[0]
+        #     else:
+        #         self.image = up_animations[math.floor(self.animation_loop)]
+        #         self.animation_loop += 0.1
+        #         if self.animation_loop >= 3:
+        #             self.animation_loop = 1
+        # if self.facing == 'left':
+        #     if self.x_change == 0:
+        #         self.image = left_animations[0]
+        #     else:
+        #         self.image = left_animations[math.floor(self.animation_loop)]
+        #         self.animation_loop += 0.1
+        #         if self.animation_loop >= 3:
+        #             self.animation_loop = 1
+        # if self.facing == 'right':
+        #     if self.x_change == 0:
+        #         self.image = right_animations[0]
+        #     else:
+        #         self.image = right_animations[math.floor(self.animation_loop)]
+        #         self.animation_loop += 0.1
+        #         if self.animation_loop >= 3:
+        #             self.animation_loop = 1
