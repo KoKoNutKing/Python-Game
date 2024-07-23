@@ -1,9 +1,9 @@
 import pygame
-import sys
+import sys, os
 from sprite import *
 from config import *
 
-
+current_dir = os.path.dirname(__file__)
 
 class Game():
     def __init__(self):
@@ -16,12 +16,12 @@ class Game():
         self.font = pygame.font.Font('04B_19.TTF',32)
         self.running = True
 
-        self.character_spritesheet = Spritesheet('D:/Code/Python/RPG_GAME/img/character.png')
-        self.enemy_spritesheet = Spritesheet('D:\Code\Python\RPG_GAME\img\enemy.png')
-        self.attack_spritesheet = Spritesheet('D:\Code\Python\RPG_GAME\img/attack.png')
-        self.terrain_spritesheet = Spritesheet('D:/Code/Python/RPG_GAME/img/terrain.png')
-        self.test = Spritesheet('D:/trash/my_sprite.png')
-        self.weapons_spritesheet = Spritesheet('D:/trash/weapons.png')
+        self.character_spritesheet = Spritesheet(os.path.join(current_dir,'img','character.png'))
+        self.enemy_spritesheet = Spritesheet(os.path.join(current_dir,'img','enemy.png'))
+        self.attack_spritesheet = Spritesheet(os.path.join(current_dir,'img','attack.png'))
+        self.terrain_spritesheet = Spritesheet(os.path.join(current_dir,'img','terrain.png'))
+        self.test = Spritesheet(os.path.join(current_dir,'img','my_sprite.png'))
+        self.weapons_spritesheet = Spritesheet(os.path.join(current_dir,'img','weapons.png'))
 
         self.intro_bg = pygame.transform.scale(pygame.image.load("img\introbackground.png")\
             .convert(),(self.width,self.height))
